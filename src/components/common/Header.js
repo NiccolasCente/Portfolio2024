@@ -49,7 +49,7 @@ const Header = () => {
             <Link to="sobremim"> {texts[language].about} </Link>
           </li>
           <li className={`li ${location.pathname === '/projects' ? 'active' : ''}`}>
-            <Link to="/projects">{texts[language].projects}</Link>
+            <Link to="/projetos">{texts[language].projects}</Link>
           </li>
           <li className={`li ${location.pathname === '/services' ? 'active' : ''}`}>
             <Link to="/services">{texts[language].services}</Link>

@@ -1,3 +1,4 @@
+//Componentes React
 import React from 'react';
 import { useLanguage } from '../common/LanguageContext'; 
 
