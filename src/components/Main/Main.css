@@ -1,0 +1,61 @@
+/* ../Main/Main.css */
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+main div {
+  flex: 1;
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 7em;
+}
+
+main h2 {
+  color: #7BFF8B;
+  margin-bottom: 1em;
+}
+
+main h1 {
+  color: #FFFFFF;
+  font-size: 48px;
+  margin-bottom: 1em;
+}
+
+.h3-main {
+  color: #FFFFFF;
+  margin-top: 3em;
+  margin-left: 3em;
+  background-color: #070707;
+  padding: 10px;
+  display: inline-block;
+  border: 1px solid whitesmoke;
+  border-radius: 1em;
+}
+
+.h3-main:hover {
+  background-color: #474849;
+}
+
+/* CSS para o contêiner dos ícones */
+.main-icons {
+  display: flex;  
+  gap: 10px; /* Espaçamento entre os ícones */
+  margin-top: 1em; /* Espaçamento acima dos ícones */
+}
+
+.custom-image {
+  width: 35px; /* Ajuste o tamanho dos ícones conforme necessário */
+  height: 35px;
+  transition: transform 0.3s ease; /* Transição suave para o efeito de hover */
+}
+
+.custom-image:hover {
+  transform: translateY(-5px); /* Efeito de "saltar" no hover */
+}

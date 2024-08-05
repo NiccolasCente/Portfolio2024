@@ -1,0 +1,80 @@
+.aboutme-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3em;
+}
+
+.image-icons-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4em;
+  margin-right: 1em;
+}
+
+.img-section {
+  width: 60%;
+  margin-bottom: 1.5em;
+}
+
+.icons-section {
+  display: flex;
+  justify-content: center;
+  gap: 0.8em;
+}
+
+.contact-icons {
+  width: 2.5em;
+  transition: transform 0.3s ease;
+}
+
+.contact-icons:hover {
+  transform: translateY(-8px);
+}
+
+.text-container {
+  flex: 1;
+  padding-left: 1.5em;
+  margin-top: 3em;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.aboutme-h1 {
+  color: #7BFF8B;
+  font-size: 36px;
+  margin-bottom: 0.5em;
+}
+
+.p-aboutme {
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 20px;
+  margin-bottom: 1em;
+  padding: 10px; /* Adiciona padding para evitar sobreposição */
+}
+
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.8em;
+  margin-top: 2em;
+}
+
+.tech-icon {
+  width: 2.5em;
+  height: auto;
+}
+
+.highlight {
+  color: #7BFF8B;
+  font-weight: bold;
+}
