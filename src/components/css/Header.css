@@ -103,3 +103,72 @@ body {
   transform: rotate(180deg); /* Rotaciona o ícone quando o dropdown está aberto */
 }
 
+@media screen and (max-width: 400px) {
+  .h1-header {
+    font-size: 20px; /* Aumenta o tamanho da fonte para o h1 */
+    margin-right: 20px; /* Aumenta a margem entre o h1 e os itens da lista */
+    margin-bottom: 1em;
+  }
+  
+  .navbar {
+    flex-direction: column; /* Muda a direção do layout para coluna */
+    align-items: flex-start; /* Alinha os itens à esquerda */
+  }
+
+  .navbar ul {
+    flex-direction: column; /* Muda a direção dos itens da lista para coluna */
+    width: 100%; /* Garante que a lista ocupe toda a largura */
+  }
+
+  .navbar li {
+    width: 100%; /* Garante que cada item da lista ocupe toda a largura */
+    text-align: center; /* Centraliza o texto dos itens da lista */
+    padding: 15px 0; /* Ajusta o espaçamento interno dos itens da lista */
+    margin-bottom: 10px; /* Adiciona margem entre os itens da lista */
+  }
+
+  .dropdown-menu {
+    width: 100%; /* Garante que o dropdown ocupe toda a largura */
+    left: 0; /* Ajusta a posição do dropdown */
+    right: auto; /* Remove o alinhamento à direita */
+  }
+
+  .dropdown-menu button {
+    text-align: center; /* Centraliza o texto dos botões no dropdown */
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .h1-header {
+    font-size: 24px; /* Aumenta o tamanho da fonte para o h1 */
+    margin-right: 30px; /* Aumenta a margem entre o h1 e os itens da lista */
+    margin-bottom: 1em;
+  }
+  
+  .navbar {
+    flex-direction: column; /* Muda a direção do layout para coluna */
+    align-items: flex-start; /* Alinha os itens à esquerda */
+  }
+
+  .navbar ul {
+    flex-direction: column; /* Muda a direção dos itens da lista para coluna */
+    width: 100%; /* Garante que a lista ocupe toda a largura */
+  }
+
+  .navbar li {
+    width: 100%; /* Garante que cada item da lista ocupe toda a largura */
+    text-align: center; /* Centraliza o texto dos itens da lista */
+    padding: 15px 0; /* Ajusta o espaçamento interno dos itens da lista */
+    margin-bottom: 10px; /* Adiciona margem entre os itens da lista */
+  }
+
+  .dropdown-menu {
+    width: 100%; /* Garante que o dropdown ocupe toda a largura */
+    left: 0; /* Ajusta a posição do dropdown */
+    right: auto; /* Remove o alinhamento à direita */
+  }
+
+  .dropdown-menu button {
+    text-align: center; /* Centraliza o texto dos botões no dropdown */
+  }
+}

@@ -59,3 +59,69 @@ main h1 {
 .custom-image:hover {
   transform: translateY(-5px); /* Efeito de "saltar" no hover */
 }
+
+@media screen and (max-width: 400px) {
+  main {
+    flex-direction: column; /* Altera a direção do layout para coluna */
+    align-items: flex-start; /* Alinha os itens à esquerda */
+  }
+  
+  main h1 {
+    font-size: 36px; /* Aumenta o tamanho da fonte do h1 */
+    margin-bottom: 0.5em; /* Reduz a margem inferior para ajustar a aparência */
+  }
+
+  main img {
+    margin-top: 1em; /* Reduz a margem superior da imagem */
+    order: 3; /* Move a imagem para ser o terceiro item no layout de coluna */
+  }
+
+  .h3-main {
+    margin-left: 0; /* Remove a margem à esquerda */
+    width: 100%; /* Garante que o .h3-main ocupe toda a largura */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+  }
+
+  .main-icons {
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    width: 100%; /* Garante que o contêiner de ícones ocupe toda a largura */
+  }
+
+  .custom-image {
+    width: 30px; /* Ajuste o tamanho dos ícones conforme necessário */
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  main {
+    flex-direction: column; /* Altera a direção do layout para coluna */
+    align-items: flex-start; /* Alinha os itens à esquerda */
+  }
+
+  main h1 {
+    font-size: 36px; /* Aumenta o tamanho da fonte do h1 */
+    margin-bottom: 0.5em; /* Reduz a margem inferior para ajustar a aparência */
+  }
+
+  main img {
+    margin-top: 1em; /* Reduz a margem superior da imagem */
+    order: 3; /* Move a imagem para ser o terceiro item no layout de coluna */
+  }
+
+  .h3-main {
+    margin-left: 0; /* Remove a margem à esquerda */
+    width: 100%; /* Garante que o .h3-main ocupe toda a largura */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+  }
+
+  .main-icons {
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    width: 100%; /* Garante que o contêiner de ícones ocupe toda a largura */
+  }
+
+  .custom-image {
+    width: 30px; /* Ajuste o tamanho dos ícones conforme necessário */
+    height: 30px;
+  }
+}
