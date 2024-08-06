@@ -1,5 +1,3 @@
-/* ../Main/Main.css */
-
 main {
   display: flex;
   justify-content: space-between;
@@ -43,85 +41,85 @@ main h1 {
   background-color: #474849;
 }
 
-/* CSS para o contêiner dos ícones */
 .main-icons {
   display: flex;  
-  gap: 10px; /* Espaçamento entre os ícones */
-  margin-top: 1em; /* Espaçamento acima dos ícones */
+  gap: 10px;
+  margin-top: 1em;
 }
 
 .custom-image {
-  width: 35px; /* Ajuste o tamanho dos ícones conforme necessário */
+  width: 35px;
   height: 35px;
-  transition: transform 0.3s ease; /* Transição suave para o efeito de hover */
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .custom-image:hover {
-  transform: translateY(-5px); /* Efeito de "saltar" no hover */
+  transform: translateY(-5px);
 }
 
 @media screen and (max-width: 400px) {
   main {
-    flex-direction: column; /* Altera a direção do layout para coluna */
-    align-items: flex-start; /* Alinha os itens à esquerda */
+    flex-direction: column;
+    align-items: flex-start;
   }
   
   main h1 {
-    font-size: 36px; /* Aumenta o tamanho da fonte do h1 */
-    margin-bottom: 0.5em; /* Reduz a margem inferior para ajustar a aparência */
+    font-size: 36px;
+    margin-bottom: 0.5em;
   }
 
   main img {
-    margin-top: 1em; /* Reduz a margem superior da imagem */
-    order: 3; /* Move a imagem para ser o terceiro item no layout de coluna */
+    margin-top: 1em;
+    order: 3;
   }
 
   .h3-main {
-    margin-left: 0; /* Remove a margem à esquerda */
-    width: 100%; /* Garante que o .h3-main ocupe toda a largura */
-    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    margin-left: 0;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .main-icons {
-    justify-content: center; /* Centraliza os ícones horizontalmente */
-    width: 100%; /* Garante que o contêiner de ícones ocupe toda a largura */
+    justify-content: center;
+    width: 100%;
   }
 
   .custom-image {
-    width: 30px; /* Ajuste o tamanho dos ícones conforme necessário */
+    width: 30px;
     height: 30px;
   }
 }
 
 @media screen and (max-width: 450px) {
   main {
-    flex-direction: column; /* Altera a direção do layout para coluna */
-    align-items: flex-start; /* Alinha os itens à esquerda */
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   main h1 {
-    font-size: 36px; /* Aumenta o tamanho da fonte do h1 */
-    margin-bottom: 0.5em; /* Reduz a margem inferior para ajustar a aparência */
+    font-size: 36px;
+    margin-bottom: 0.5em;
   }
 
   main img {
-    margin-top: 1em; /* Reduz a margem superior da imagem */
-    order: 3; /* Move a imagem para ser o terceiro item no layout de coluna */
+    margin-top: 1em;
+    order: 3;
   }
 
   .h3-main {
-    margin-left: 0; /* Remove a margem à esquerda */
-    width: 100%; /* Garante que o .h3-main ocupe toda a largura */
-    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    margin-left: 0;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .main-icons {
-    justify-content: center; /* Centraliza os ícones horizontalmente */
-    width: 100%; /* Garante que o contêiner de ícones ocupe toda a largura */
+    justify-content: center;
+    width: 100%;
   }
 
   .custom-image {
-    width: 30px; /* Ajuste o tamanho dos ícones conforme necessário */
+    width: 30px;
     height: 30px;
   }
 }

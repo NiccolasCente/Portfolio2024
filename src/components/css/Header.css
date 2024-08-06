@@ -105,11 +105,11 @@ body {
 
 @media screen and (max-width: 400px) {
   .h1-header {
-    font-size: 20px; /* Aumenta o tamanho da fonte para o h1 */
-    margin-right: 20px; /* Aumenta a margem entre o h1 e os itens da lista */
+    font-size: 20px; /* Ajusta o tamanho da fonte para o h1 */
+    margin-right: 0; /* Remove a margem direita */
     margin-bottom: 1em;
   }
-  
+
   .navbar {
     flex-direction: column; /* Muda a direção do layout para coluna */
     align-items: flex-start; /* Alinha os itens à esquerda */
@@ -118,6 +118,7 @@ body {
   .navbar ul {
     flex-direction: column; /* Muda a direção dos itens da lista para coluna */
     width: 100%; /* Garante que a lista ocupe toda a largura */
+    padding: 0; /* Remove o padding */
   }
 
   .navbar li {
@@ -140,11 +141,11 @@ body {
 
 @media screen and (max-width: 450px) {
   .h1-header {
-    font-size: 24px; /* Aumenta o tamanho da fonte para o h1 */
-    margin-right: 30px; /* Aumenta a margem entre o h1 e os itens da lista */
+    font-size: 24px; /* Ajusta o tamanho da fonte para o h1 */
+    margin-right: 10px; /* Ajusta a margem entre o h1 e os itens da lista */
     margin-bottom: 1em;
   }
-  
+
   .navbar {
     flex-direction: column; /* Muda a direção do layout para coluna */
     align-items: flex-start; /* Alinha os itens à esquerda */
@@ -153,6 +154,7 @@ body {
   .navbar ul {
     flex-direction: column; /* Muda a direção dos itens da lista para coluna */
     width: 100%; /* Garante que a lista ocupe toda a largura */
+    padding: 0; /* Remove o padding */
   }
 
   .navbar li {

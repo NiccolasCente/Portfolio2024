@@ -58,7 +58,7 @@
   color: #FFFFFF;
   font-size: 20px;
   margin-bottom: 1em;
-  padding: 10px; /* Adiciona padding para evitar sobreposição */
+  padding: 10px;
 }
 
 .tech-icons {
@@ -77,4 +77,110 @@
 .highlight {
   color: #7BFF8B;
   font-weight: bold;
+}
+
+@media screen and (max-width: 400px) {
+  .aboutme-section {
+    flex-direction: column;
+    padding: 1.5em;
+  }
+
+  .image-icons-container {
+    width: 100%;
+    margin-top: 2em;
+    margin-right: 0;
+    align-items: center;
+  }
+
+  .img-section {
+    width: 80%;
+    margin-bottom: 1em;
+  }
+
+  .icons-section {
+    gap: 1em;
+  }
+
+  .contact-icons {
+    width: 3em;
+    margin: 0.5em;
+  }
+
+  .text-container {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 2em;
+  }
+
+  .aboutme-h1 {
+    font-size: 28px;
+    margin-bottom: 0.3em;
+  }
+
+  .p-aboutme {
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  .tech-icons {
+    justify-content: center;
+    gap: 0.5em;
+  }
+
+  .tech-icon {
+    width: 2.2em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .aboutme-section {
+    flex-direction: column;
+    padding: 1.5em;
+  }
+
+  .image-icons-container {
+    width: 100%;
+    margin-top: 2em;
+    margin-right: 0;
+    align-items: center;
+  }
+
+  .img-section {
+    width: 80%;
+    margin-bottom: 1em;
+  }
+
+  .icons-section {
+    gap: 1em;
+  }
+
+  .contact-icons {
+    width: 2.8em;
+    margin: 0.5em;
+  }
+
+  .text-container {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 2em;
+  }
+
+  .aboutme-h1 {
+    font-size: 28px;
+    margin-bottom: 0.3em;
+  }
+
+  .p-aboutme {
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  .tech-icons {
+    justify-content: center;
+    gap: 0.5em;
+  }
+
+  .tech-icon {
+    width: 2.2em;
+  }
 }
