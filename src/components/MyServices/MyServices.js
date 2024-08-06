@@ -24,10 +24,6 @@ const MyServices = () => {
           title: "Criação de Protótipos",
           description: "Crio designs que ajudam a visualizar o produto final e que garantem uma transição perfeita para o desenvolvimento."
         },
-        {
-          title: "Outro Serviço",
-          description: "Descrição do quarto serviço."
-        }
       ]
     },
     en: {
@@ -45,10 +41,6 @@ const MyServices = () => {
           title: "Prototype Creation",
           description: "I create designs that help visualize the final product and ensure a seamless transition to development. "
         },
-        {
-          title: "Other Service",
-          description: "Description of the fourth service."
-        }
       ]
     }
   };

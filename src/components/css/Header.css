@@ -10,16 +10,16 @@ body {
 
 .h1-header {
   color: antiquewhite;
-  margin-right: 20px; /* Espaçamento entre o h1 e os itens da lista */
+  margin-right: 20px;
 }
 
 .navbar {
   display: flex;
-  justify-content: space-between; /* Espaça o logo e o conteúdo da navbar */
-  align-items: center; /* Alinha verticalmente os itens no centro */
-  padding: 10px; /* Espaçamento interno da navbar */
-  width: 100%; /* Garante que a navbar ocupe toda a largura */
-  position: relative; /* Para ajustar a posição */
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  position: relative;
   top: 0;
   left: 0;
 }
@@ -29,32 +29,37 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  gap: 10px; /* Espaçamento entre os itens da lista */
+  gap: 10px;
 }
 
 .navbar li {
   color: antiquewhite;
-  padding: 10px 20px;
   border-radius: 5px;
   background-color: #070707;
   display: flex;
   align-items: center;
   border: 1px solid whitesmoke;
-  transition: background-color 0.3s; /* Adiciona transição suave */
+  transition: background-color 0.3s;
+  position: relative; /* Garante que o item ocupe toda a área */
 }
 
 .navbar li:hover {
   background-color: #474849;
 }
 
-.navbar a {
+.navbar a, .navbar .nav-link {
   color: antiquewhite;
   text-decoration: none;
-  cursor: pointer; /* Altera o cursor ao passar sobre o link */
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
 }
 
 .dropdown {
-  position: relative; /* Para posicionar o dropdown corretamente */
+  position: relative;
 }
 
 .dropdown-button {
@@ -64,11 +69,11 @@ body {
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 5px; /* Espaço entre o texto e o ícone */
+  gap: 5px;
 }
 
 .dropdown-menu {
-  display: block; /* Garante que o menu será exibido quando o dropdown estiver aberto */
+  display: block;
   position: absolute;
   top: 100%;
   right: 0;
@@ -76,7 +81,7 @@ body {
   border: 1px solid whitesmoke;
   border-radius: 5px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 1000; /* Garante que o dropdown apareça sobre outros elementos */
+  z-index: 1000;
 }
 
 .dropdown-menu button {
@@ -94,83 +99,83 @@ body {
 }
 
 .arrow-icon {
-  width: 12px; /* Ajuste o tamanho do ícone conforme necessário */
+  width: 12px;
   height: auto;
-  transition: transform 0.3s; /* Adiciona transição suave ao ícone */
+  transition: transform 0.3s;
 }
 
 .arrow-icon.open {
-  transform: rotate(180deg); /* Rotaciona o ícone quando o dropdown está aberto */
+  transform: rotate(180deg);
 }
 
 @media screen and (max-width: 400px) {
   .h1-header {
-    font-size: 20px; /* Ajusta o tamanho da fonte para o h1 */
-    margin-right: 0; /* Remove a margem direita */
+    font-size: 20px;
+    margin-right: 0;
     margin-bottom: 1em;
   }
 
   .navbar {
-    flex-direction: column; /* Muda a direção do layout para coluna */
-    align-items: flex-start; /* Alinha os itens à esquerda */
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .navbar ul {
-    flex-direction: column; /* Muda a direção dos itens da lista para coluna */
-    width: 100%; /* Garante que a lista ocupe toda a largura */
-    padding: 0; /* Remove o padding */
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
   }
 
   .navbar li {
-    width: 100%; /* Garante que cada item da lista ocupe toda a largura */
-    text-align: center; /* Centraliza o texto dos itens da lista */
-    padding: 15px 0; /* Ajusta o espaçamento interno dos itens da lista */
-    margin-bottom: 10px; /* Adiciona margem entre os itens da lista */
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 10px;
   }
 
   .dropdown-menu {
-    width: 100%; /* Garante que o dropdown ocupe toda a largura */
-    left: 0; /* Ajusta a posição do dropdown */
-    right: auto; /* Remove o alinhamento à direita */
+    width: 100%;
+    left: 0;
+    right: auto;
   }
 
   .dropdown-menu button {
-    text-align: center; /* Centraliza o texto dos botões no dropdown */
+    text-align: center;
   }
 }
 
 @media screen and (max-width: 450px) {
   .h1-header {
-    font-size: 24px; /* Ajusta o tamanho da fonte para o h1 */
-    margin-right: 10px; /* Ajusta a margem entre o h1 e os itens da lista */
+    font-size: 24px;
+    margin-right: 10px;
     margin-bottom: 1em;
   }
 
   .navbar {
-    flex-direction: column; /* Muda a direção do layout para coluna */
-    align-items: flex-start; /* Alinha os itens à esquerda */
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .navbar ul {
-    flex-direction: column; /* Muda a direção dos itens da lista para coluna */
-    width: 100%; /* Garante que a lista ocupe toda a largura */
-    padding: 0; /* Remove o padding */
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
   }
 
   .navbar li {
-    width: 100%; /* Garante que cada item da lista ocupe toda a largura */
-    text-align: center; /* Centraliza o texto dos itens da lista */
-    padding: 15px 0; /* Ajusta o espaçamento interno dos itens da lista */
-    margin-bottom: 10px; /* Adiciona margem entre os itens da lista */
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 10px;
   }
 
   .dropdown-menu {
-    width: 100%; /* Garante que o dropdown ocupe toda a largura */
-    left: 0; /* Ajusta a posição do dropdown */
-    right: auto; /* Remove o alinhamento à direita */
+    width: 100%;
+    left: 0;
+    right: auto;
   }
 
   .dropdown-menu button {
-    text-align: center; /* Centraliza o texto dos botões no dropdown */
+    text-align: center;
   }
 }

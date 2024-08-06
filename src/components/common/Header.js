@@ -8,7 +8,7 @@ import "../css/Header.css";
 const Header = () => {
   const { language, toggleLanguage } = useLanguage();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const location = useLocation(); // Hook 
+  const location = useLocation(); 
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -16,7 +16,7 @@ const Header = () => {
 
   const handleLanguageChange = (lang) => {
     toggleLanguage(lang); 
-    setIsDropdownOpen(false); // Fechar o dropdown após a seleção
+    setIsDropdownOpen(false);
   };
 
   const texts = {
@@ -40,22 +40,22 @@ const Header = () => {
     <header>
       <nav className="navbar">
         <h1 className="h1-header">
-          <Link to="/"> 
+          <Link to="/" aria-label="Voltar para o início">
             &lt;Niccolas Cente/&gt;
           </Link>
         </h1>
         <ul>
           <li className={`li ${location.pathname === '/' ? 'active' : ''}`}>
-            <Link to="sobremim"> {texts[language].about} </Link>
+            <Link to="sobremim" className="nav-link">{texts[language].about}</Link>
           </li>
           <li className={`li ${location.pathname === '/projects' ? 'active' : ''}`}>
-            <Link to="/projetos">{texts[language].projects}</Link>
+            <Link to="/projetos" className="nav-link">{texts[language].projects}</Link>
           </li>
           <li className={`li ${location.pathname === '/services' ? 'active' : ''}`}>
-            <Link to="/serviços">{texts[language].services}</Link>
+            <Link to="/serviços" className="nav-link">{texts[language].services}</Link>
           </li>
           <li>
-            <a href={CV} download="Niccolas_Cente_Curriculo.pdf">{texts[language].download}</a>
+            <a href={CV} download="Niccolas_Cente_Curriculo.pdf" className="nav-link">{texts[language].download}</a>
           </li>
           <li className="dropdown">
             <button className="dropdown-button" onClick={toggleDropdown}>
