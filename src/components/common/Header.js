@@ -52,7 +52,7 @@ const Header = () => {
             <Link to="/projetos">{texts[language].projects}</Link>
           </li>
           <li className={`li ${location.pathname === '/services' ? 'active' : ''}`}>
-            <Link to="/services">{texts[language].services}</Link>
+            <Link to="/serviços">{texts[language].services}</Link>
           </li>
           <li>
             <a href={CV} download="Niccolas_Cente_Curriculo.pdf">{texts[language].download}</a>

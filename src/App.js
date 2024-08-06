@@ -6,6 +6,7 @@ import Main from "./components/Main/Main";
 import  { LanguageProvider } from "../src/components/common/LanguageContext";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MyProjects from "./components/MyProjects/MyProjects";
+import MyServices from "./components/MyServices/MyServices";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/sobremim" element={<AboutMe />} />
         <Route path="/sobremim" element={<Main />} />
         <Route path="/projetos" element={<MyProjects />} />
+        <Route path="/serviços" element={<MyServices />} />
         {/* Adicione outras rotas conforme necessário */}
       </Routes>
     </LanguageProvider>

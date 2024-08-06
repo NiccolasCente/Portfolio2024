@@ -1,0 +1,47 @@
+.services-container {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .h1-services {
+    margin-bottom: 40px;
+    color: #7BFF8B;
+  }
+  
+  .services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .service-item {
+    flex: 1 1 calc(50% - 40px); /* Ajusta para 2 colunas com espaço */
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 500px; /* Limita a largura máxima de cada item */
+    transition: transform 0.3s, border-color 0.3s; /* Adiciona transição suave para a transformação e a cor da borda */
+  }
+  
+  .service-item:hover {
+    transform: translateY(-10px); /* Efeito de pulo */
+    border-color: #7BFF8B; /* Muda a cor da borda ao passar o mouse */
+  }
+  
+  .h2-services {
+    margin-bottom: 10px;
+    color: #7BFF8B;
+  }
+  
+  .service-item p {
+    margin-bottom: 0;
+    font-size: 24px;
+  }
+  
+  p {
+    color: #FFFFFF;
+  }
+  
