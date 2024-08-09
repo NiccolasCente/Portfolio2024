@@ -72,6 +72,12 @@
 .tech-icon {
   width: 2.5em;
   height: auto;
+  transition: transform 0.3s ease;
+}
+
+.tech-icon:hover{
+  transform: translateY(-8px);
+
 }
 
 .highlight {
